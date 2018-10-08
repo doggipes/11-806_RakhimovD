@@ -105,7 +105,7 @@ public class ClassTestTask01 {
     {
         int sum = 0;
         for (int i = 0; i < n2; i++) {
-            for (int j = 0; j < n2 - i - 1; j++) {
+            for (int j = 0; j < i; j++) {
                 sum += matrix[j][i];
             }
         }
