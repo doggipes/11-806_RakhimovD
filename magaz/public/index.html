@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+<table>
+    <tr>
+        <th>id</th><th>Name</th>
+    </tr>
+</table>
+
+<script type="text/javascript">
+
+
+    document.write ('<table width="100%" border="1">');
+    for (i=0; i<3; i++) {
+        document.writeln("<tr>");
+        for (j=0; j<3; j++) var index;
+        document.write("<td>" + posts[j].name + posts[j].price + "<\/td>");
+        document.writeln("<\/tr>");
+    }
+    document.write ("<\/table> ");
+</script>
+
+
+<form action="/users">
+    <button>Cart</button>
+</form>
+
+<div id="okno">
+    <form method="get" action="localhost:3000/index/get">
+        <label1>Name</label1>
+        <input type="text" name="name_of_product" id="name_of_product"> <br>
+        <label2>Price</label2>
+        <input type="text" name="price_of_product" id="price_of_product"> <br>
+        <button>Send</button>
+    </form>
+    <a href="#" class="close">Закрыть окно</a>
+</div>
+
+<a href="#okno">Добавить товар</a>
+
+
+</body>
+
+</html>
